@@ -1,0 +1,5 @@
+# Ignore virtual environments
+venv/
+model_cache
+fine_tuned_model
+results
