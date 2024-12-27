@@ -3,3 +3,9 @@ run:
 
 freeze:
 	pip freeze > requirements.txt
+
+kafka:
+	docker compose up -d
+
+kafkalogs:
+	docker logs -f kafka

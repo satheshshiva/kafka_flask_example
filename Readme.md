@@ -13,3 +13,6 @@
 ```
 python3 -m pip freeze > requirements.txt
 ```
+
+## Run local instance of kafka
+1. Run 

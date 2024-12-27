@@ -30,3 +30,12 @@ def idInHtml(id):
 def queryparam_example():
     param1 = request.args.get('param1') 
     return '<h1> You sent %s </h1>' % param1
+
+# GET AND POST Example
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        param1 = request.args.get('param1') 
+        return "POST Method"
+    else:
+        return "This route only support POST method"
