@@ -15,4 +15,21 @@ python3 -m pip freeze > requirements.txt
 ```
 
 ## Run local instance of kafka
-1. Run 
+1. Ensure docker is installed.
+1. Run the command `docker compose up -d`
+
+## Run the Kafka example application
+1. Use the command,  
+`python -m flask --app kafka_example run --host=0.0.0.0`
+1. Then navigate to,  
+`http://localhost:5000/produce?value=something5`
+1. In another tab keep refreshing  
+`http://localhost:5000/consume`  
+to receive the message
+
+## Run the Flask example application
+1. Use the command,  
+`python -m flask --app flask_examples run --host=0.0.0.0`
+1. Then navigate to,  
+`http://localhost:5000/`
+1. Navigate to the different controllers from browser
